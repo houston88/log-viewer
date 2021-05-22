@@ -18,9 +18,9 @@ if (!filename) {
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
-app.get('/lib/jquery.min.js', (req, res) => {
+app.get('/lib/jquery.slim.min.js', (req, res) => {
   console.log('Return jquery...');
-  res.sendFile(__dirname + '/lib/jquery-3.6.0.slim.min.js')
+  res.sendFile(__dirname + '/lib/jquery.slim.min.js')
 });
 app.get('/lib/socket.io.min.js', (req, res) => {
   console.log('Return socket.io...');
